@@ -1,8 +1,4 @@
 export default function lista1(){
-
-    
-    
-
     return(
         <>
         <div>
@@ -26,7 +22,6 @@ function gerarLista(final = 10){
         if(i == final) addComma = false;
         
         array.push(<span>{i}{addComma ? "," : ""}</span>)
-
     }
 
     return array;
