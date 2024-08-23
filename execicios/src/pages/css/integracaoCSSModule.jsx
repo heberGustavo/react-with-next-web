@@ -1,4 +1,4 @@
-import styles from '../css/integracao.module.css';
+import styles from './integracao.module.css';
 
 export default function integracaoCSSModule(){
     return(

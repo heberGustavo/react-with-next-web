@@ -31,3 +31,21 @@ body {
     text-wrap: balance;
   }
 }
+
+
+.orange{
+  color: orange;
+  font-weight: 700;
+}
+
+.blueviolet{
+  color: white;
+  background-color: blueviolet;
+  font-weight: 700;
+}
+
+.green{
+  color: white;
+  background: green;
+  font-weight: 700;
+}
