@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useState } from "react";
+import ContadorDisplay from "../../../components/ContadorDisplay";
 
 const styleDivCustom = {
     backgroundColor: "#adadad",
@@ -13,12 +14,6 @@ const styleDivCustom = {
 const styleH1Custom = {
     fontSize: "60px",
     fontWeight: "700",
-};
-
-const stylePCustom = {
-    fontSize: "20px",
-    fontWeight: "400",
-    margin: "20px",
 };
 
 const styleButtonCustom = {
@@ -35,15 +30,10 @@ export default function contador() {
     const [number, setNumber] = useState(0);
     const [numberBase, setNumberBase] = useState(1);
 
-    function addNumber(){
-        setNumber(number + numberBase);
-    }
+    const addNumber = () => setNumber(number + numberBase);
+    const subNumber = () => setNumber(number - numberBase);
 
-    function subNumber(){
-        setNumber(number - numberBase);
-    }
-
-    function setNumberInput(e){
+    const setNumberInput = (e) =>{
         let myCurrentNumber = parseInt(e.target.value);
 
         if(!Number.isInteger(myCurrentNumber)){
@@ -65,10 +55,7 @@ export default function contador() {
                 onChange={setNumberInput}
                 value={numberBase}
             />
-            <p>O calculo base é por: <strong>{numberBase}</strong></p>
-            <br />
-
-            <p style={stylePCustom}>O valor atual é: <strong>{number}</strong></p>
+            <ContadorDisplay numberBase={numberBase} number={number} />
             <div>
                 <button style={styleButtonCustom} onClick={subNumber}>-</button>
                 <button style={styleButtonCustom} onClick={addNumber}>+</button>
