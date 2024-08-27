@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react";
+import styles from "./GeradorNumeros.module.css";
+
+import { useState } from "react";
 import ContainerNumeros from "../ContainerNumeros/ContainerNumeros";
 
 export default function GeradorNumeros(props){
@@ -24,7 +26,7 @@ export default function GeradorNumeros(props){
         <div>
             <p>{props.quantidade}</p>
             <button 
-                style={{border: "1px solid black"}}
+                className={styles.button}
                 onClick={gerarNumerosSorte}
             >
                 Gerar</button>
