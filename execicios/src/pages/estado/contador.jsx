@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useState } from "react";
-import ContadorDisplay from "../../../components/ContadorDisplay";
+import NumeroDisplay from "../../../components/NumeroDisplay";
 
 const styleDivCustom = {
     backgroundColor: "#adadad",
@@ -55,7 +55,7 @@ export default function contador() {
                 onChange={setNumberInput}
                 value={numberBase}
             />
-            <ContadorDisplay numberBase={numberBase} number={number} />
+            <NumeroDisplay number={number} />
             <div>
                 <button style={styleButtonCustom} onClick={subNumber}>-</button>
                 <button style={styleButtonCustom} onClick={addNumber}>+</button>
