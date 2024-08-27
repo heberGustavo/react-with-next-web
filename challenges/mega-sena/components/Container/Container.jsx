@@ -8,6 +8,7 @@ import ContainerNumeros from "../ContainerNumeros/ContainerNumeros";
 
 export default function Container(){
 
+    const [quant, setQuant] = useState(6);
     const [numeros, setNumeros] = useState([]);
 
     useEffect(() => {
@@ -20,9 +21,17 @@ export default function Container(){
             <ContainerNumeros numeros={numeros} />
 
             <br />
+            <input 
+                type="number"
+                min={6}
+                max={20}
+                className={styles.input}
+                value={quant}
+                onChange={ev => setQuant(ev.target.value)}
+            />
             <button 
                 className={styles.button}
-                onClick={() => setNumeros(mega())}
+                onClick={() => setNumeros(mega(quant))}
             >Gerar</button>
         </div>
     );

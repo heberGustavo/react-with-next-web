@@ -1,4 +1,5 @@
 export function mega(quantNumeros = 6, numerosMega = []){
+    quantNumeros = +quantNumeros;
     if(quantNumeros < 6 || quantNumeros > 60)
         throw "Quantidade inválida";
 
