@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useRouter } from "next/router";
 import ElementH1andSpan from "../../components/ElementH1andSpan";
+import Link from "next/link";
 
 export default function params(){
     return(
@@ -12,6 +13,11 @@ export default function params(){
             <div>
                 {getElementsInQuery()}
             </div>
+
+            <br /><br />
+            <Link href="/rotas">
+                <button>Redirect to Rotas</button>
+            </Link>
         </div>
     );
 }
