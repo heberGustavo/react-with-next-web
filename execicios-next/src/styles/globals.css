@@ -21,6 +21,7 @@ body {
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
   background-color: #222;
   color: #ddd;
+  padding-left: 5px;
 }
 
 @layer utilities {
