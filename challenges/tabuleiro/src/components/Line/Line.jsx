@@ -1,4 +1,4 @@
-import Block from "../../components/Block/Block";
+import Block from "@/components/Block/Block";
 
 export default function Line(props) {
     return (

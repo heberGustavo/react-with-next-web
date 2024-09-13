@@ -1,5 +1,4 @@
-import styles from './Tabuleiro.module.css';
-import Line from "../Line/Line";
+import Line from "@/components/Line/Line";
 
 export default function Tabuleiro(props) {
     return (

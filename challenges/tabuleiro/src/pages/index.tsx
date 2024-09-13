@@ -1,5 +1,5 @@
 import styles from "../styles/index.module.css";
-import Tabuleiro from "../../components/Tabuleiro/Tabuleiro";
+import Tabuleiro from "@/components/Tabuleiro/Tabuleiro";
 
 export default function Home() {
   return (
