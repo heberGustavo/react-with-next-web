@@ -1,10 +1,10 @@
 import styles from './Container.module.css'
 
 import { useEffect, useState } from 'react';
-import { mega } from "../../functions/mega";
+import { mega } from "../../../functions/mega";
 
-import Titulo from "../Titulo/Titulo";
-import ContainerNumeros from "../ContainerNumeros/ContainerNumeros";
+import Titulo from "@/components/Titulo/Titulo";
+import ContainerNumeros from "@/components/ContainerNumeros/ContainerNumeros";
 
 export default function Container(){
 

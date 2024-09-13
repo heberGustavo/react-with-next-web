@@ -1,12 +1,12 @@
 import styles from "./ContainerNumeros.module.css";
 
-import ItemNumeros from "../ItemNumeros/ItemNumeros";
+import ItemNumero from "@/components/ItemNumero/ItemNumero";
 
 export default function ContainerNumeros(props){
 
     const gerarNumeros = () => {
         return props.numeros.map((item, i) => {
-            return <ItemNumeros key={i} numero={item}/>
+            return <ItemNumero key={i} numero={item}/>
         });
     }
 
